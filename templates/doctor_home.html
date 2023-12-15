@@ -1,0 +1,21 @@
+{% extends 'navbar1.html' %}
+{% block content %}
+<div class="col-md-12">
+    {% for message in messages %}
+    <h5>
+        <div class="alert alert-danger" style="text-align: center; justify-content: center;">
+            {{message}}
+        </div>
+    </h5>
+    {% endfor %}
+</div>
+<style>
+    body{
+        background-image: url('https://t3.ftcdn.net/jpg/04/87/69/28/360_F_487692869_V8MZ1hLvhXQZKT50EV8Sh13AkdibGJb3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+    }
+</style>
+{% endblock %}

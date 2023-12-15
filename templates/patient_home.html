@@ -1,0 +1,21 @@
+{% extends 'navbar3.html' %}
+{% block content %}
+<div class="col-md-12">
+    {% for message in messages %}
+    <h5>
+        <div class="alert alert-danger" style="text-align: center; justify-content: center;">
+            {{message}}
+        </div>
+    </h5>
+    {% endfor %}
+</div>
+<style>
+    body{
+        background-image: url('https://previews.agefotostock.com/previewimage/medibigoff/5edcc55908b437c8707298e4ae2a21d3/esy-057620667.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+    }
+</style>
+{% endblock %}

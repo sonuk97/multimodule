@@ -1,0 +1,13 @@
+{% extends 'navbar1.html' %}
+{% block content %}
+<div class="col-md-12">
+    {% for message in messages %}
+    <h5>
+        <div class="alert alert-danger" style="text-align: center; justify-content: center;">
+            {{message}}
+        </div>
+    </h5>
+    {% endfor %}
+</div>
+<h1 style="text-align: center;justify-content: center;">Welcome Admin</h1>
+{% endblock %}
